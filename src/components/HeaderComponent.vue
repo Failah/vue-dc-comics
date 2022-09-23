@@ -2,16 +2,16 @@
   <div class="container">
     <header>
         <div id="logo">
-    <img src="../assets/img/dc-logo.png" alt="">
-</div>
+            <img src="../assets/img/dc-logo.png" alt="">
+        </div>
 
-<nav>
-    <ul>
-        <li v-for="link in navLinks" :key="link.title">
-            <a :href="link.link" :class="{ active: link.active }">{{ link.title }}</a>
-        </li>
-    </ul>
-</nav>
+        <nav>
+            <ul>
+                <li v-for="link in navLinks" :key="link.title">
+                    <a :href="link.link" :class="{ active: link.active }">{{ link.title }}</a>
+                </li>
+            </ul>
+        </nav>
 
     </header>
   </div>
@@ -90,8 +90,13 @@ header {
 }
 
 #logo {
-    width: 50px;
-    margin: 10px 0px;
+    width: 80px;
+    margin: 20px 0px;
+
+    img {
+        vertical-align: middle;
+    height: 100%;
+    }
 }
 
 ul {
@@ -113,6 +118,7 @@ ul {
     height: 100%;
     &.active {
         border-bottom: 2px solid $dc-brand-color;
+        color: #309efb;
     }
 }
 }
