@@ -1,14 +1,21 @@
 <template>
     <main>
-        <div class="container">CONTENT GOES HERE
+        <MainTopJumboComponent />
+        <div class="container">
 
         </div>
     </main>
 </template>
   
   <script>
+import MainTopJumboComponent from './MainTopJumboComponent.vue';
+
+
   export default {
-  name: 'MainComponent'
+  name: 'MainComponent',
+  components: {
+    MainTopJumboComponent,
+  }
   }
   </script>
   
@@ -19,7 +26,6 @@
     main {
         background-color: $bg-dark;
         color: white;
-        padding: 30px 0px;
     }
   
   </style>

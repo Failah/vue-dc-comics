@@ -107,12 +107,12 @@ ul {
     li {
     height: 100%;
     padding: 0px 10px;
-    
+    font-weight: bold;
 
         a {
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
+    color: #443c32;
     display: flex;
     align-items: center;
     height: 100%;
