@@ -1,8 +1,8 @@
 <template>
     <div>
         <FooterTopShopComponent/>
-    <FooterMiddleLinksComponent/>
-    <FooterBottomSocialComponent/>
+        <FooterMiddleLinksComponent/>
+        <FooterBottomSocialComponent/>
     </div>
    
 </template>
