@@ -1,15 +1,12 @@
 <template>
-  <div>
-
-  </div>
+  <div></div>
 </template>
 
 <script>
 export default {
-name: 'MainBottomSeriesComponent'
-}
+  name: "MainBottomSeriesComponent",
+};
 </script>
 
 <style lang="scss" scoped>
-
 </style>
