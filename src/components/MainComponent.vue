@@ -1,20 +1,20 @@
 <template>
     <main>
         <MainTopJumboComponent />
-        <div class="container">
-
-        </div>
+        <MainBottomSeriesComponent />
     </main>
 </template>
   
   <script>
 import MainTopJumboComponent from './MainTopJumboComponent.vue';
+import MainBottomSeriesComponent from './MainBottomSeriesComponent.vue';
 
 
   export default {
   name: 'MainComponent',
   components: {
     MainTopJumboComponent,
+    MainBottomSeriesComponent,
   }
   }
   </script>
