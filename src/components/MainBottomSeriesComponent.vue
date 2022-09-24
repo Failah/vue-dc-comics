@@ -1,10 +1,10 @@
 <template>
-  <div class="container">
-    <div v-for="item in comicsCards" :key="item.series">
-      <div>
-        <img :src="item.thumb" :alt="item.series" />
-      </div>
+  <div class="container comics-container-main">
+    <div class="comics-card" v-for="item in comicsCards" :key="item.series">
+      <img class="comic-card-img" :src="item.thumb" :alt="item.series" />
+      <p>{{ item.series }}</p>
     </div>
+    <button>LOAD MORE</button>
   </div>
 </template>
 
@@ -106,7 +106,36 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container {
-  height: 500px;
+@import "../styles/variables.scss";
+
+.comics-container-main {
+  padding: 50px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  column-gap: 15px;
+  row-gap: 35px;
+
+  .comics-card {
+    width: calc(100% / 6 - 15px);
+    height: 40%;
+    margin-bottom: 15px;
+
+    .comic-card-img {
+      width: 150px;
+      height: 150px;
+    }
+
+    p {
+      width: 150px;
+      text-transform: uppercase;
+      padding-top: 10px;
+      font-size: 0.8rem;
+    }
+  }
+
+  button {
+    background-color: $bg-blue;
+  }
 }
 </style>
