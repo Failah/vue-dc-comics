@@ -144,4 +144,20 @@ export default {
     cursor: pointer;
   }
 }
+
+// effects
+
+.comic-card-img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  filter: brightness(135%);
+}
+
+button:hover {
+  filter: brightness(120%);
+}
+
+button:active {
+  transform: scale(0.95);
+}
 </style>
