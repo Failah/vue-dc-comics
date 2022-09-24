@@ -136,6 +136,12 @@ export default {
 
   button {
     background-color: $bg-blue;
+    color: white;
+    font-weight: bold;
+    font-size: 0.85rem;
+    padding: 12px 60px;
+    border: none;
+    cursor: pointer;
   }
 }
 </style>
